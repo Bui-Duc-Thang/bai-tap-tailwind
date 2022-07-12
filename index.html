@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDUBIN</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slide_show.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,50 +96,118 @@
                     </li>
                   </ul>
                 </li>
+                
                 <li>
                   <a href="#">
                     <b>COURSES</b>
-                    <i class="fa-solid fa-angle-down ml-1.5"></i>
                   </a>
+                  <ul id="sub-menu">
+                    <li>
+                      <a href="#">Course Grid Variation</a>
+                      <ul id="sub-menu">
+                        <li><a href="#">Course Grid 1</a></li>
+                        <li><a href="#">Course Grid 2</a></li>
+                        <li><a href="#">Course Grid 3</a></li>
+                        <li><a href="#">Course Grid 4</a></li>
+                        <li><a href="#">Course Grid 5</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Advanced Course Filter
+                      </a>
+                      <ul id="sub-menu">
+                        <li><a href="#">Filter Left Sidebar</a></li>
+                        <li><a href="#">Filter Right Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Membership Levels</a></li>
+                    <li><a href="#">LearnPress Profile</a></li>
+                    <li><a href="#">Become an Instructor</a></li>
+                    <li><a href="#">Paid Type Course</a></li>
+                    <li><a href="#">Free Type Course</a></li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#">
                     <b>PAGES</b>
+                    <i class="fa-solid fa-angle-down ml-1.5"></i>
                   </a>
-                  <ul id="sub-menu">
+                  <ul>
                     <li>
-                      <a href="#"></a>Course Grid Variation
-                      <ul id="sub-menu">
-                        <li>Course Grid 1</li>
-                        <li>Course Grid 2</li>
-                        <li>Course Grid 3</li>
-                        <li>Course Grid 4</li>
-                        <li>Course Grid 5</li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Pricing Table</a>
+                      <ul>
+                        <li>
+                          <a href="#">Pricing Table 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Pricing Table 2</a>
+                        </li>
                       </ul>
                     </li>
                     <li>
-                      Advanced Course Filter
-                      <ul id="sub-menu">
-                        <li>Filter Left Sidebar</li>
-                        <li>Filter Right Sidebar</li>
+                      <a href="#">Teacher</a>
+                      <ul>
+                        <li>
+                          <a href="#">Teachers List</a>
+                        </li>
+                        <li>
+                          <a href="#">Teacher Profile</a>
+                        </li>
                       </ul>
                     </li>
-                    <li>Membership Levels</li>
-                    <li>LearnPress Profile</li>
-                    <li>Become an Instructor</li>
-                    <li>Paid Type Course</li>
-                    <li>Free Type Course</li>
+                    <li>
+                      <a href="#">404 Page</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
                   </ul>
                 </li>
-
                 <li>
                   <a href="#"><b>EVENTS</b></a>
+                  <ul>
+                    <li>
+                      <a href="#">Events Archive</a>
+                    </li>
+                    <li>
+                      <a href="#">Events Grid</a>
+                    </li>
+                    <li>
+                      <a href="#">Single Events 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Single Events 2</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#"><b>BLOG</b></a>
+                  <ul>
+                    <li>
+                      <a href="#">Blog Lists</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog Grid</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog Single</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#"><b>SHOP</b></a>
+                  <ul>
+                    <li>
+                      <a href="#">Book Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop Single</a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="#"><b>CONTACT</b></a>
@@ -159,16 +228,11 @@
         <section class="w3-container">
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
               <img src="./image/background_slide.jpg" style="width: 100%"/>
             </div>
-      
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
               <img src="./image/thumbnail.jpg" style="width: 100%" />
             </div>
-      
-          
       
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
@@ -670,6 +734,11 @@
                 </div>
               </div>
             </div>
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
         </section>
         <section class="from-news w3-container">
@@ -689,49 +758,73 @@
                 <div class="news-image">
                   <a href="#"><img src="./image/news1.jpeg"></a>
                 </div>
-                <div class="news-date-user container mx-auto flex justify-between">
+                <div class="news-date-user container mx-auto flex">
                   <div class="news-date">
                     <a href="#">
-
+                      <i class="fa-regular fa-calendar-days"></i>
                       17 JULY 2019
                     </a>
                   </div>
                   <div class="news-user">
+                    <i class="fa-regular fa-user"></i>
                     <a href="#">MARK ALEN</a>
                   </div>
                 </div>
+                <a  href="#">
+                  <h3 class="news-title" >How to Learn Faster and Remember</h3>
+                </a>
+                <p>
+                  Scelerisque ante platea nullam himenaeos quam 
+                  sollicitudin ullamcorper sodales tristique.
+                </p>
               </div>
               <div class="single-news">
                 <div class="news-image">
                   <a href="#"><img src="./image/news1.jpeg"></a>
                 </div>
-                <div class="news-date-user container  flex justify-between">
+                <div class="news-date-user container  flex">
                   <div class="news-date">
                     <a href="#">
-
+                      <i class="fa-regular fa-calendar-days"></i>
                       17 JULY 2019
                     </a>
                   </div>
                   <div class="news-user">
+                    <i class="fa-regular fa-user"></i>
                     <a href="#">MARK ALEN</a>
                   </div>
                 </div>
+                <a  href="#">
+                  <h3 class="news-title" >How to Learn Faster and Remember</h3>
+                </a>
+                <p>
+                  Scelerisque ante platea nullam himenaeos quam 
+                  sollicitudin ullamcorper sodales tristique.
+                </p>
               </div>
               <div class="single-news">
                 <div class="news-image">
                   <a href="#"><img src="./image/news1.jpeg"></a>
                 </div>
-                <div class="news-date-user container mx-auto flex justify-between">
+                <div class="news-date-user container mx-auto flex">
                   <div class="news-date">
                     <a href="#">
-
+                      <i class="fa-regular fa-calendar-days"></i>
                       17 JULY 2019
                     </a>
                   </div>
                   <div class="news-user">
+                    <i class="fa-regular fa-user"></i>
                     <a href="#">MARK ALEN</a>
                   </div>
                 </div>
+                <a  href="#">
+                  <h3 class="news-title" >How to Learn Faster and Remember</h3>
+                </a>
+                <p>
+                  Scelerisque ante platea nullam himenaeos quam 
+                  sollicitudin ullamcorper sodales tristique.
+                </p>
               </div>
             </div>
           </div>
@@ -743,7 +836,6 @@
           <div class="footer-top container mx-auto flex justify-between">
             <div class="grid grid-cols-3 gap-4 text-white">
               <div>
-                1
                 <img
                   width="180px"
                   height="49px"
@@ -753,7 +845,7 @@
                   Edubin perfect for online courses and other institutes. It’s a
                   complete solution with lms features and functionalities.
                 </p>
-                <div>
+                <div class="item-logo">
                   <a href="#">
                     <i
                       class="fa-brands fa-facebook-f text-white hover:text-[#FFC600] mr-2"
@@ -821,8 +913,3 @@
 <!-- https://60d4611a61160900173cb070.mockapi.io/courses
 
 https://62b188aec7e53744afbb3660.mockapi.io/user -->
-<div style="text-align: center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
